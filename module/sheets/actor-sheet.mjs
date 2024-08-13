@@ -22,6 +22,7 @@ export class MEGSActorSheet extends ActorSheet {
         initial: 'abilities',
       },
     ];
+    newOptions.dragDrop = [{ dragSelector: ".item-list .item, .attributes", dropSelector: null }]
     return newOptions;
   }
 
