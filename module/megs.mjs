@@ -347,6 +347,7 @@ async function resetInitiativeAtEndOfTurn(combat, delta) {
   if (delta.round > 1 && delta.turn === 0) {
     combat.combatants.forEach(combatant => {
       console.error(combatant);
+      combatant.initiative = null;
     });
   }
 }
