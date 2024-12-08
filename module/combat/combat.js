@@ -92,6 +92,9 @@ export default class MEGSCombat extends Combat {
 
       // Produce an initiative roll for the Combatant
       const roll = combatant.getInitiativeRoll(formula, hpToAdd)
+      /** TODO
+       * foundry-esm.js:4621 Error: The async option for Roll#evaluate has been removed. Use Roll#evaluateSync for synchronous roll evaluation.
+       */
       await roll.evaluate({ async: true })
       updates.push({ _id: id, initiative: roll.total })
 

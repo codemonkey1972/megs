@@ -344,7 +344,11 @@ async function resetInitiativeAtEndOfTurn(combat, delta) {
   console.error("TEST1");
   console.error(combat);
   console.error(delta);
-
+  if (delta.round > 1 && delta.turn === 0) {
+    combat.combatants.forEach(combatant => {
+      console.error(combatant);
+    });
+  }
 }
 
 /* -------------------------------------------- */
