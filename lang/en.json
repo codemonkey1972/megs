@@ -64,6 +64,7 @@
     "IsBroken": "Is Broken?",
     "IsCarried": "Is Carried?",
     "IsLinked": "Is Linked?",
+    "Item": "Item",
     "Limitation": "Limitation",
     "Link": "Link",
     "LinkedAttribute": "Linked Attribute",
@@ -91,6 +92,7 @@
     "Special": "Special",
     "Spirit": "Spirit",
     "Submit": "Submit",
+    "Subskill": "Subskill",
     "TotalCost": "Total Cost",
     "Traits": "Traits",
     "Type": "Type",
@@ -105,7 +107,8 @@
       "npc": "NPC",
       "villain": "Villain",
       "pet": "Pet",
-      "vehicle": "Vehicle"
+      "vehicle": "Vehicle",
+      "base": "base"
     },
     "Item": {
       "gadget": "Gadget",
