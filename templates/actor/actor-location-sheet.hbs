@@ -17,7 +17,7 @@
       <div class="resources grid grid-3col">
 
         <div class="resource flex-group-center">
-          <label for="system.ownerId" class="resource-label">{{localize 'MEGS.Owner'}} TEST</label>
+          <label for="system.ownerId" class="resource-label">{{localize 'MEGS.Owner'}}</label>
           <div>
             <select  class="resource-select"  name="system.ownerId" data-type="String">
                 {{selectOptions characters selected=system.ownerId localize=true}}
@@ -32,11 +32,7 @@
         {{#if locations}}
               <select  class="resource-select"  name="system.linkedItemId" data-type="String">
                   <option value="">{{localize 'MEGS.None'}}</option>
-            {{#select system.linkedItemId}}
-              {{#each locations as |id name|}}
-                <option value="{{id}}">{{name}}</option>
-              {{/each}}
-            {{/select}}
+                {{selectOptions locations selected=system.linkedItemId localize=true}}
               </select>
         {{else}}
           &mdash;
