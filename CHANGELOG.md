@@ -17,8 +17,12 @@
  - Macro fixes and simplification for skills/subskills
  - Bug fixes from user submissions
  
-## 0.5.3 (February 2, 2025)
+## 0.5.3 (February 15, 2025)
  - Fixed bug that defaulted macros to looking at selected token actor instead of macro's actor
  - Fixed bug that had all rolls from Item object defaulting to unskilled (-2 column shifts)
  - Allow skills and subskills to be editable
  - Updated README to conform to requests by Foundry devs
+ - Reworked vehicles some; needs more work.
+ - Added location actor and item types, similar to vehicles.
+ - Added Portuguese (Brazil) language support. Thanks to @rodrigomiranda on Discord!
+ - Made some technical changes caused by Foundry around select components.
