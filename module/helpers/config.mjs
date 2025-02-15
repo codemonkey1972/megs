@@ -95,7 +95,7 @@ MEGS.omniRanges = {
   D: "Italicized Attributes"
 }
 
-MEGS.yesNoOptions = {
-  true: "Yes",
-  false: "No"
-}
+MEGS.yesNoOptions = [
+  { key: "true", label: "Yes" },
+  { key: "false", label: "No" }
+]
