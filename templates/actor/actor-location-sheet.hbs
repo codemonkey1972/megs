@@ -34,7 +34,7 @@
         {{#if locations}}
               <select  class="resource-select"  name="system.linkedItemId" data-type="String">
               <option value="" disabled
-                {{#unless system.ownerId}}selected{{/unless}}
+                {{#unless system.linkedItemId}}selected{{/unless}}
               >{{localize 'MEGS.None'}}</option>
                 {{selectOptions locations selected=system.linkedItemId localize=true}}
               </select>
