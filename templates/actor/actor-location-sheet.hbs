@@ -20,19 +20,22 @@
           <label for="system.ownerId" class="resource-label">{{localize 'MEGS.Owner'}}</label>
           <div>
             <select  class="resource-select"  name="system.ownerId" data-type="String">
-              <option value="" disabled>{{localize 'MEGS.None'}}</option>
+              <option value="" disabled
+                {{#unless system.ownerId}}selected{{/unless}}
+              >{{localize 'MEGS.None'}}</option>
               {{selectOptions characters selected=system.ownerId localize=true}}
             </select>
           </div>
         </div>
 
-      {{#if system.ownerId}}
         <div class="resource flex-group-center">
           <label for="system.linkedItemId" class="resource-label">{{localize 'MEGS.LinkedItem'}}</label>
           <div>
         {{#if locations}}
               <select  class="resource-select"  name="system.linkedItemId" data-type="String">
-                <option value="" disabled>{{localize 'MEGS.None'}}</option>
+              <option value="" disabled
+                {{#unless system.ownerId}}selected{{/unless}}
+              >{{localize 'MEGS.None'}}</option>
                 {{selectOptions locations selected=system.linkedItemId localize=true}}
               </select>
         {{else}}
@@ -40,7 +43,6 @@
         {{/if}}
           </div>
         </div>
-      {{/if}}
         <div class="resource flex-group-center">
           <label for="system.currentBody.value" class="resource-label">{{localize "MEGS.Current"}} {{localize "MEGS.Body"}}</label>
           <div>
