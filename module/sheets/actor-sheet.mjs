@@ -135,6 +135,7 @@ export class MEGSActorSheet extends ActorSheet {
 
             owner.items.forEach((element) => {
               if (element.type === MEGS.itemTypes.gadget) {
+                console.error(element); // TODO delete
 
                 // store linked vehicle item
                 if (element._id === context.system.linkedItemId) {
