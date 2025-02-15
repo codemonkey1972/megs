@@ -20,11 +20,8 @@
           <label for="system.ownerId" class="resource-label">{{localize 'MEGS.Owner'}}</label>
           <div>
             <select  class="resource-select"  name="system.ownerId" data-type="String">
-            {{#select system.ownerId}}
-              {{#each characters as |name id|}}
-              <option value="{{id}}">{{name}}</option>
-              {{/each}}
-            {{/select}}
+              <option value="" disabled>{{localize 'MEGS.None'}}</option>
+              {{selectOptions characters selected=system.ownerId localize=true}}
             </select>
           </div>
         </div>
@@ -35,12 +32,8 @@
           <div>
         {{#if vehicles}}
             <select  class="resource-select"  name="system.linkedItemId" data-type="String">
-                <option value="">{{localize 'MEGS.None'}}</option>
-        {{#select system.linkedItemId}}
-            {{#each vehicles as |id name|}}
-              <option value="{{id}}">{{name}}</option>
-            {{/each}}
-        {{/select}}
+              <option value="" disabled>{{localize 'MEGS.None'}}</option>
+              {{selectOptions vehicles selected=system.linkedItemId localize=true}}
             </select>
         {{else}}
           &mdash;

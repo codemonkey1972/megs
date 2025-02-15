@@ -114,7 +114,7 @@ export class MEGSActorSheet extends ActorSheet {
                 }
 
                 // add to list for header
-                context.locations[element.name] = element._id;
+                context.locations[element._id] = element.name;
               }
             });
             context.locations = this._sortArray(context.locations);
@@ -142,7 +142,7 @@ export class MEGSActorSheet extends ActorSheet {
                 }
 
                 // add to list for header
-                context.vehicles[element.name] = element._id;
+                context.vehicles[element._id] = element.name;
               }
             });
             context.vehicles = this._sortArray(context.vehicles);
