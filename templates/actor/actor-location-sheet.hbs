@@ -47,7 +47,7 @@
           <label for="system.currentBody.value" class="resource-label">{{localize "MEGS.Current"}} {{localize "MEGS.Body"}}</label>
           <div>
             <div class="resource-content flexrow flex-center flex-between attribute-container">
-            {{#if system.linkedItem?.system.currentBody.value}}
+            {{#if system.linkedItem.system.currentBody.value}}
               {{system.linkedItem.system.currentBody.value}}
             {{else}}
               &mdash;
