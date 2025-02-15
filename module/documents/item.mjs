@@ -69,7 +69,6 @@ export class MEGSItem extends Item {
     systemData.ranges = MEGS.ranges;
     
     systemData.yesNoOptions = MEGS.yesNoOptions;
-    console.error(systemData); // TODO delete
 
 
   }
