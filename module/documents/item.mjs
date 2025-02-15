@@ -67,7 +67,6 @@ export class MEGSItem extends Item {
     systemData.powerTypes = MEGS.powerTypes;
     systemData.powerSources = MEGS.powerSources;
     systemData.ranges = MEGS.ranges;
-    systemData.yesNoOptions = MEGS.yesNoOptions;
   }
 
   /**

@@ -162,6 +162,8 @@ export class MEGSItemSheet extends ItemSheet {
 
     context.showHeroPointCosts = game.settings.get("megs", "showHeroPointCosts");
 
+    context.yesNoOptions = MEGS.yesNoOptions;
+
     return context;
   }
 
