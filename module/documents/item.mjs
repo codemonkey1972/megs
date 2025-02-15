@@ -69,8 +69,6 @@ export class MEGSItem extends Item {
     systemData.ranges = MEGS.ranges;
     
     systemData.yesNoOptions = MEGS.yesNoOptions;
-
-
   }
 
   /**

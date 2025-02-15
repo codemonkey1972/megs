@@ -174,8 +174,6 @@
           <select  class="resource-select"  name="system.activateFree" data-type="String">
             {{#select system.activateFree}}
               {{selectOptions system.yesNoOptions selected=system.activateFree localize=true}}
-                <option  value="false">{{localize 'MEGS.No'}}</option>
-                <option  value="true">{{localize 'MEGS.Yes'}}</option>
             {{/select}}
           </select>
         {{else}}
@@ -183,6 +181,7 @@
         {{/if}}
       {{else}}
         <span>
+          {{system.yesNoOptions["true"]}}
           {{#if (compare system.activateFree "eq" "true")}}
             {{localize 'MEGS.Yes'}}
           {{/if}}
