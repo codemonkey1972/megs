@@ -172,7 +172,7 @@
       {{#if flags.megs.edit-mode}}
         {{#if hasActor}}
           <select  class="resource-select"  name="system.activateFree" data-type="String">
-            {{selectOptions system.activateFree selected=MEGS.yesNoOptions localize=true}}
+            {{selectOptions system.activateFree selected=MEGS.yesNoOptions nameAttr="key" labelAttr="label" localize=true}}
           </select>
         {{else}}
           {{localize 'MEGS.No'}}
