@@ -164,6 +164,7 @@ export class MEGSItemSheet extends ItemSheet {
 
     context.yesNoOptions = MEGS.yesNoOptions;
     console.error(context); // TODO delete
+    console.error(context.yesNoOptions[context.system.activateFree]); // TODO delete
 
     return context;
   }
