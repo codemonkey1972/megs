@@ -181,7 +181,14 @@
           {{localize 'MEGS.No'}}
         {{/if}}
       {{else}}
-        <span>{{ifThen (system.activateFree === "true") "It is true" "It is false"}}</span>
+        <span>
+          {{#if (compare system.activateFree "eq" "true")}}
+            {{localize 'MEGS.Yes'}}
+          {{/if}}
+          {{#if (compare system.activateFree "eq" "false")}}
+            {{localize 'MEGS.No'}}
+          {{/if}}
+        </span>
       {{/if}}
           </div>
         </div>
