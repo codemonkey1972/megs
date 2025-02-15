@@ -96,6 +96,6 @@ MEGS.omniRanges = {
 }
 
 MEGS.yesNoOptions = {
-  "true": "Yes",
-  "false": "No"
+  true: "Yes",
+  false: "No"
 }
