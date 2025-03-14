@@ -16,7 +16,7 @@
   "media": [
     {
       "type": "setup",
-      "url": "https://raw.githubusercontent.com/codemonkey1972/megs/124-item-reliability-has-delimited-values/system.json",
+      "url": "https://raw.githubusercontent.com/codemonkey1972/megs/67-persist-details-openclosed-state-on-refresh/system.json",
       "thumbnail": "systems/megs/assets/images/megs-logo-world-background.jpg"
     }
   ],
@@ -42,8 +42,8 @@
   "packs": [],
   "packFolders": [],
   "socket": false,
-  "manifest": "https://raw.githubusercontent.com/codemonkey1972/megs/refs/heads/124-item-reliability-has-delimited-values/system.json",
-  "download": "https://github.com/codemonkey1972/megs/zipball/124-item-reliability-has-delimited-values/",
+  "manifest": "https://raw.githubusercontent.com/codemonkey1972/megs/refs/heads/67-persist-details-openclosed-state-on-refresh/system.json",
+  "download": "https://github.com/codemonkey1972/megs/zipball/67-persist-details-openclosed-state-on-refresh/",
   "background": "systems/megs/assets/images/megs-logo-world-background.jpg",
   "grid": {
     "distance": 5,

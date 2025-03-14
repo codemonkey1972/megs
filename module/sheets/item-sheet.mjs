@@ -419,6 +419,7 @@ export class MEGSItemSheet extends ItemSheet {
 
     // set reliability numbers
     context.reliabilityScores = [0, 2, 3, 5, 7, 9, 11];
+    console.error(MEGS); // TODO delete
 
     // Initialize containers.
     const powers = [];
